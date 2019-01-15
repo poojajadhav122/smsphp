@@ -1,4 +1,10 @@
-<?php  
+<?php 
+
+ session_start();
+ if(isset($_SESSION['sms'])){ // this all we write because when we login that time its goes no the index page only if we manually type loginthen also it should open index.php page
+  //echo "yes";
+  header("location:index.php");
+ } 
   require_once 'header.php';
 ?>
       <div id="content-wrapper">

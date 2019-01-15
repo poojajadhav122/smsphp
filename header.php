@@ -99,7 +99,7 @@
         <li class="nav-item">
           <a class="nav-link" href="logout.php">
             <i class="fas fa-fw fa-table"></i>
-            <span>Logout</span></a>
+            <span>Logout<?php echo $_SESSION['name'];?></span></a><!-- thsi we writen because we have to name of user who has login in the on side of the logout(pooja) -->
         </li>
         <?php 
       endif;

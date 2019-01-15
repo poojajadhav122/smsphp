@@ -39,8 +39,26 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-    <script type="text/javascript" src="js/sms_project.js"></script>
+    
+    <?php
+    if(!isset($_SESSION['sms'])):
+    ?>
+    <script type="text/javascript" src="js/sms_project.js">
+      
+    </script>
+    <?php
+     endif;
+    ?>
 
+     <?php
+    if(isset($_SESSION['sms'])):
+    ?>
+    <script type="text/javascript" src="js/sms_project1.js">
+      
+    </script>
+    <?php
+     endif;
+    ?>
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
